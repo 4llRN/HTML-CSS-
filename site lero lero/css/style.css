@@ -1,0 +1,157 @@
+/* 1. Configurações Globais */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bitcount Single", system-ui;
+    background-color: #f4f7f6; /* Cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    border: #0d47a1 2px solid;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 2. Cabeçalho e Títulos */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #34495e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo para todas as sections (usando TAG) */
+section {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo EXCLUSIVO para o login (usando ID #) */
+#login {
+    background-color: #e3f2fd; /* Um azul bem clarinho */
+    border: 2px solid #2196f3; /* Borda azul mais forte */
+    box-shadow: 5px 5px 15px rgba(33, 150, 243, 0.2);
+}
+
+
+#login :hover {
+    display: transform;
+    transform: scale(1.03);
+}
+/* Estilo para um elemento específico dentro do ID */
+#login h2 {
+    color: #0d47a1;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#escolha {
+    background-color: #f9fbe7; /* Um verde bem clarinho */
+    border: 2px solid #8bc34a; /* Borda verde mais forte */
+    box-shadow: 5px 5px 15px rgba(139, 195, 74, 0.2);
+}
+#escolha h2 {
+    color: #33691e;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#date {
+    background-color: #fff3e0; /* Um laranja bem clarinho */
+    border: 2px solid #ff9800; /* Borda laranja mais forte */
+    box-shadow: 5px 5px 15px rgba(255, 152, 0, 0.2);
+}
+
+#date h2 {
+    color: #e65100;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#alternativas {
+    background-color: #f3e5f5; /* Um roxo bem clarinho */
+    border: 2px solid #9c27b0; /* Borda roxa mais forte */
+    box-shadow: 5px 5px 15px rgba(156, 39, 176, 0.2);
+}       
+#alternativas h2 {
+    color: #4a148c;
+    text-align: center;
+    text-decoration: underline;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit; /* Usa a Bitcount aqui também */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* 4. Checkboxes e Radios */
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+/* 5. Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #888;
+}
