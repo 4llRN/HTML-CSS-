@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="site lero lero">
+    <title>Intro ao HTML & CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Fundamentos de Desenvolvimento Web</h1>
+            <p>Aprendendo a construir interfaces interativas do zero.</p>
+            <img src="css/html_css.png" alt="HTML e CSS"> 
+
+            <nav>
+                <ul>
+                    <li><a href="#login">login</a></li>
+                    <li><a href="#escolha">Multipla escolha</a></li>
+                    <li><a href="#date">Datas</a></li>
+                    <li><a href="#alternativas">Alternativas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Formulários de Teste</h2>
+            <p>Abaixo você encontrará exemplos de elementos de interação. Preencha os campos para testar os atributos required e os tipos de input.</p>
+            <section id="login">
+                <h2>teste de login</h2>
+                <form action="login">
+                    <label for="t1">Nome:</label>
+                    <input type="text" id="t1" name="teste1" placeholder="Digite o seu nome..." required>
+
+                    <label for="t2">Senha:</label>
+                    <input type="password" id="t2" name="teste2" placeholder="Digite sua senha..." required>
+
+                    <input type="submit" value="Entrar">
+                </form>
+            </section>
+            
+            <section id="escolha">
+                <h2>Quiz Rápido</h2>
+                <p>Qual tag usamos para criar um link?</p>
+                <form action="escolha">
+                    <input type="radio" id="op1" name="escolha" value="Lero Lero">
+                    <label for="op1">&lt;link&gt;</label><br>
+                    <input type="radio" id="op2" name="escolha" value="não sei">
+                    <label for="op2">&lt;a&gt;</label><br>
+                </form>
+            </section>
+            
+            <section id="date">
+                <form action="date">
+                    <h2>Seu aniversário</h2>
+                    <input type="date" id="data" name="data">
+                </form>
+            </section>
+            
+            <section id="alternativas">
+                <h2>Tags sem fechamento</h2>
+                <p>Selecione as tags que não possuem &lt;/tag&gt;:</p>
+                <form action="alternativas">
+                    <input type="checkbox" id="alt1" name="quest5" value="Alt1">
+                    <label for="alt1">&lt;br&gt;</label><br>
+                    <input type="checkbox" id="alt2" name="quest5" value="Alt2">
+                    <label for="alt2">&lt;p&gt;</label><br>
+                    <input type="checkbox" id="alt3" name="quest5" value="Alt3">
+                    <label for="alt3">&lt;img&gt;</label><br>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Lero Lero Inc.</p> <br>
+            <p>Desenvolvido por: Allan Ramos e Gabriel Garcia</p>
+
+            <p>
+                Acesse nossos projetos: <br>
+                <a href="https://github.com/4llRN" target="_blank" rel="noopener noreferrer">GitHub Allan</a> <br>
+                <a href="https://github.com/gabrielnascimentogarcia" target="_blank" rel="noopener noreferrer">GitHub Gabriel</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
